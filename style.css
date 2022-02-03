@@ -63,3 +63,8 @@ body{
     background-color: aqua;
     font-weight: 700;
 }
+@media only screen and (max-width: 500px) {
+    .header{
+        font-size:24px;
+    }
+}

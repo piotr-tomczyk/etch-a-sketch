@@ -2,8 +2,14 @@ function create_grid(size){
     const container = document.querySelector('#container');
     const div = document.createElement('div');
     div.style.cssText = "border-style: solid;";
-    div.style.height = 512 / size + "px";
-    div.style.width = 512 / size + "px";
+    if(window.screen.width > 500){
+        div.style.height = 512 / size + "px";
+        div.style.width = 512 / size + "px";
+    }
+    else{
+        div.style.height = 256 / size + "px";
+        div.style.width = 256 / size + "px";
+    }
     div.setAttribute('id', 'leaf'); 
     div.classList.add('leaf');
     div.classList.add('hover');
