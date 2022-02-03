@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">PAINT</div>
+        <div class="name">Piotr Tomczyk</div>
+    </div>
+    <div class = "content">
+        <div class="buttons">
+            <button id="reset" style="display: none"> Reset Grid</button>
+            <button id="create-grid"> Create Grid</button>
+            <button id="refresh" style="display: none">Refresh Page</button>
+        </div>
+        <div class="form" id="form1">
+            <form>
+                <label for="4x4">4x4</label>
+                <input type="radio" id="a4x4" name="radAnswer">
+                <label for="8x8">8x8</label>
+                <input type="radio" id="a8x8" name="radAnswer">
+                <label for="16x16">16x16</label>
+                <input type="radio" id="a16x16" name="radAnswer">
+            </form>
+        </div>
+        <div id="form2" style="display: none">
+            <div style="text-align: center;">Pick color</div>
+            <form>
+                <label for="red">red</label>
+                <input type="radio" id="red" name="r1adAnswer">
+                <label for="blue">blue</label>
+                <input type="radio" id="blue" name="r1adAnswer" checked="checked">
+                <label for="yellow">yellow</label>
+                <input type="radio" id="yellow" name="r1adAnswer">
+            </form>
+        </div>
+        <div id="container"></div>
+    </div>
+    <div class="footer">
+        <div>Copyright © Piotr Tomczyk 2022</div>
+    </div>
+</body>
+</html>
